@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.2.0](https://github.com/googleapis/google-api-nodejs-client/compare/chromepolicy-v4.1.0...chromepolicy-v4.2.0) (2023-02-10)
+
+
+### Features
+
+* **chromepolicy:** update the API ([9c8277a](https://github.com/googleapis/google-api-nodejs-client/commit/9c8277a195df18b23e62464f3fdd6b4819b93d52))
+
+
+### Bug Fixes
+
+* **chromepolicy:** update the API ([ef3650d](https://github.com/googleapis/google-api-nodejs-client/commit/ef3650d9d766f5c6772ed7921c3c22d4b008e356))
+
 ## [4.1.0](https://github.com/googleapis/google-api-nodejs-client/compare/chromepolicy-v4.0.1...chromepolicy-v4.1.0) (2023-02-10)
 
 
