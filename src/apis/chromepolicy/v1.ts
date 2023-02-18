@@ -128,6 +128,10 @@ export namespace chromepolicy_v1 {
 
   export interface Schema$ChromeCrosDpanelAutosettingsProtoPolicyApiLifecycle {
     /**
+     * In the event that this policy was deprecated in favor of another policy, the fully qualified namespace(s) of the new policies as they will show in PolicyAPI.
+     */
+    deprecatedInFavorOf?: string[] | null;
+    /**
      * Description about current life cycle.
      */
     description?: string | null;
