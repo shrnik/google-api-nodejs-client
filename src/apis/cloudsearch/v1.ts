@@ -999,7 +999,14 @@ export namespace cloudsearch_v1 {
      */
     isExternal?: boolean | null;
     name?: string | null;
+    /**
+     * Deprecated. Use segmented_membership_counts instead which also includes other counts such as rosters.
+     */
     numMembers?: number | null;
+    /**
+     * Member counts object with types of members and their respective counts.
+     */
+    segmentedMembershipCounts?: Schema$AppsDynamiteSharedSegmentedMembershipCounts;
     /**
      * searching user's membership state in this space
      */
@@ -1107,6 +1114,10 @@ export namespace cloudsearch_v1 {
      * List of action parameters.
      */
     parameters?: Schema$AppsDynamiteStorageActionActionParameter[];
+    /**
+     * Indicates whether form values persist after the action. The default value is `false`. If `true`, form values remain after the action is triggered. When using [LoadIndicator.NONE](workspace/add-ons/reference/rpc/google.apps.card.v1#loadindicator) for actions, `persist_values` = `true`is recommended, as it ensures that any changes made by the user after form or on change actions are sent to the server are not overwritten by the response. If `false`, the form values are cleared when the action is triggered. When `persist_values` is set to `false`, it is strongly recommended that the card use [LoadIndicator.SPINNER](workspace/add-ons/reference/rpc/google.apps.card.v1#loadindicator) for all actions, as this locks the UI to ensure no changes are made by the user while the action is being processed.
+     */
+    persistValues?: boolean | null;
   }
   /**
    * List of string parameters to supply when the action method is invoked. For example, consider three snooze buttons: snooze now, snooze 1 day, snooze next week. You might use action method = snooze(), passing the snooze type and snooze time in the list of string parameters.
