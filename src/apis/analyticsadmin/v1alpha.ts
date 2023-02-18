@@ -1998,7 +1998,7 @@ export namespace analyticsadmin_v1alpha {
      */
     account?: Schema$GoogleAnalyticsAdminV1alphaAccount;
     /**
-     * Redirect URI where the user will be sent after accepting Terms of Service. Must be configured in Developers Console as a Redirect URI
+     * Redirect URI where the user will be sent after accepting Terms of Service. Must be configured in Developers Console as a Redirect URI.
      */
     redirectUri?: string | null;
   }
@@ -2020,7 +2020,7 @@ export namespace analyticsadmin_v1alpha {
      */
     dateRanges?: Schema$GoogleAnalyticsAdminV1alphaAccessDateRange[];
     /**
-     * Dimension filters allow you to restrict report response to specific dimension values which match the filter. For example, filtering on access records of a single user. To learn more, see [Fundamentals of Dimension Filters](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#dimension_filters) for examples. Metrics cannot be used in this filter.
+     * Dimension filters let you restrict report response to specific dimension values which match the filter. For example, filtering on access records of a single user. To learn more, see [Fundamentals of Dimension Filters](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#dimension_filters) for examples. Metrics cannot be used in this filter.
      */
     dimensionFilter?: Schema$GoogleAnalyticsAdminV1alphaAccessFilterExpression;
     /**
@@ -2817,7 +2817,7 @@ export namespace analyticsadmin_v1alpha {
      *   const res = await analyticsadmin.accounts.patch({
      *     // Output only. Resource name of this account. Format: accounts/{account\} Example: "accounts/100"
      *     name: 'accounts/my-account',
-     *     // Required. The list of fields to be updated. Field names must be in snake case (e.g., "field_to_update"). Omitted fields will not be updated. To replace the entire entity, use one path with the string "*" to match all fields.
+     *     // Required. The list of fields to be updated. Field names must be in snake case (for example, "field_to_update"). Omitted fields will not be updated. To replace the entire entity, use one path with the string "*" to match all fields.
      *     updateMask: 'placeholder-value',
      *
      *     // Request body metadata
@@ -3282,7 +3282,7 @@ export namespace analyticsadmin_v1alpha {
      */
     name?: string;
     /**
-     * Required. The list of fields to be updated. Field names must be in snake case (e.g., "field_to_update"). Omitted fields will not be updated. To replace the entire entity, use one path with the string "*" to match all fields.
+     * Required. The list of fields to be updated. Field names must be in snake case (for example, "field_to_update"). Omitted fields will not be updated. To replace the entire entity, use one path with the string "*" to match all fields.
      */
     updateMask?: string;
 
@@ -6493,7 +6493,7 @@ export namespace analyticsadmin_v1alpha {
     }
 
     /**
-     * Acknowledges the terms of user data collection for the specified property. This acknowledgement must be completed (either in the Google Analytics UI or via this API) before MeasurementProtocolSecret resources may be created.
+     * Acknowledges the terms of user data collection for the specified property. This acknowledgement must be completed (either in the Google Analytics UI or through this API) before MeasurementProtocolSecret resources may be created.
      * @example
      * ```js
      * // Before running the sample:
