@@ -330,7 +330,7 @@ export namespace content_v2_1 {
      */
     koreanBusinessRegistrationNumber?: string | null;
     /**
-     * The phone number of the business. This can only be updated if a verified phone number is not already set. To replace a verified phone number use the `Accounts.requestphoneverification` and `Accounts.verifyphonenumber`.
+     * The phone number of the business in [E.164](https://en.wikipedia.org/wiki/E.164) format. This can only be updated if a verified phone number is not already set. To replace a verified phone number use the `Accounts.requestphoneverification` and `Accounts.verifyphonenumber`.
      */
     phoneNumber?: string | null;
     /**
